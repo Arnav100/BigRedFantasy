@@ -14,23 +14,58 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.player-card {
+.team-cards-view .player-card {
     transition: 0.4s ease-out;
     position: relative;
     left: 0px;
 }
 
-.player-card:not(:first-child) {
+.team-cards-view .player-card:not(:first-child) {
     margin-left: -50px;
 }
 
-.player-card:hover {
+.team-cards-view .player-card:hover {
     transform: translateY(-20px);
     transition: 0.4s ease-out;
 }
 
-.player-card:hover~.player-card {
+.team-cards-view .player-card:hover~.player-card {
     position: relative;
     left: 70px;
     transition: 0.4s ease-out;
+}
+
+
+.team-cards-collapse-left {
+    display: flex;
+    justify-content: left;
+}
+
+.team-cards-collapse-left .player-card {
+    transition: 0.4s ease-out;
+}
+
+.team-cards-collapse-left .player-card:not(:first-child) {
+    margin-left: -18em;
+    /*Correct way to do stacking affect, make position absolute, left 0px, top 0px
+    each subsequent card, add pixels to top or left. Change z-index for each card. Do this with JS*/
+}
+
+.team-cards-collapse-right {
+    display: flex;
+    justify-content: right;
+}
+
+.team-cards-collapse-right .player-card {
+    transition: 0.4s ease-out;
+    right: 0px
+}
+
+.team-cards-collapse-right .player-card:not(:last-child) {
+    margin-right: -18em;
+
+    /*have to give cards correct z-index for stacking, use JS*/
+
+    /*Correct way to do stacking affect, make position absolute, left 0px, top 0px
+    each subsequent card, add pixels to top or left. Change z-index for each card. Do this with JS*/
 }

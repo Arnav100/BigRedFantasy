@@ -183,3 +183,70 @@ img {
 #item-3:checked~.player #test {
     transform: translateY(-80px);
 }
+
+body {
+    background-color: #00b894;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.arrow {
+    /* position: absolute;
+    top: 25px; */
+    width: 90%;
+    height: 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    animation: arrow 700ms linear infinite;
+}
+
+.arrow::after,
+.arrow::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    background-color: #fff;
+}
+
+.left-arrow::after,
+.left-arrow::before {
+    margin-left: -8px;
+}
+
+.left-arrow::after {
+    margin-top: -14px;
+    transform: rotate(-45deg);
+}
+
+.left-arrow::before {
+    margin-top: 14px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(45deg);
+}
+
+.right-arrow::after,
+.right-arrow::before {
+    right: -8px;
+}
+
+.right-arrow::after {
+    margin-top: -14px;
+    transform: rotate(45deg);
+}
+
+.right-arrow::before {
+    margin-top: 14px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
