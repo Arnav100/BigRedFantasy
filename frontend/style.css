@@ -5,7 +5,12 @@
 }
 
 .stat {
-    font-size: 14px;
+    font-size: 18px;
+}
+
+.data {
+    font-size: 16px;
+    font-weight: bolder;
 }
 
 .card-shadow {
@@ -49,6 +54,10 @@
     margin-left: -18em;
     /*Correct way to do stacking affect, make position absolute, left 0px, top 0px
     each subsequent card, add pixels to top or left. Change z-index for each card. Do this with JS*/
+}
+
+.right {
+    justify-content: right;
 }
 
 .team-cards-collapse-right {
